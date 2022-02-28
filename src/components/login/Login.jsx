@@ -1,12 +1,12 @@
 import React from 'react'
 
-import styled from 'styled-components';
+import { LoginContainer, LoginPage } from './Login.styles';
 
-import { auth, provider } from '../firebase/firebase';
+import { auth, provider } from '../../firebase/firebase';
 
 import { Button } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { login } from '../features/userSlice';
+import { login } from '../../features/userSlice';
 
 function Login() {
     const dispatch = useDispatch();
@@ -35,20 +35,3 @@ function Login() {
 }
 
 export default Login
-
-const LoginPage = styled.div`
-    background-color: #f2f2f2;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-`;
-
-const LoginContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    img{
-        object-fit: contain;
-        height: 50px;
-    }
-`;

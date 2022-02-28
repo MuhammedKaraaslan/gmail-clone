@@ -2,19 +2,19 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { AppBody, AppContainer } from './App.styles';
+
 import { auth } from './firebase/firebase';
 
 import { selectSendMessageIsOpen } from './features/mailSlice';
 import { login, selectUser } from './features/userSlice'
 
-import styled from 'styled-components';
-
-import EmailList from './components/EmailList';
-import Header from './components/Header';
-import MailDetails from './components/MailDetails';
-import SendMail from './components/SendMail';
-import Sidebar from './components/Sidebar';
-import Login from './components/Login';
+import EmailList from './components/email-list/EmailList';
+import Header from './components/header/Header';
+import MailDetails from './components/mail-details/MailDetails';
+import SendMail from './components/send-mail/SendMail';
+import Sidebar from './components/side-bar/Sidebar';
+import Login from './components/login/Login';
 
 
 function App() {
@@ -66,11 +66,3 @@ function App() {
 
 export default App;
 
-const AppContainer = styled.div`
-  height: 100vh;
-`;
-
-const AppBody = styled.div`
-  display: flex;
-  height: 100vh;
-`;

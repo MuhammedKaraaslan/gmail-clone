@@ -1,19 +1,4 @@
-import React from 'react'
-
 import styled, { css } from 'styled-components';
-
-function SidebarOption({ Icon, title, number, selected }) {
-    return (
-        <Container containerSelection={selected ? true : false}>
-            <Icon />
-            <h3>{title}</h3>
-            <p>{number}</p>
-        </Container>
-    )
-}
-
-export default SidebarOption
-
 
 const getSelection = css`
     &, p, h3{
@@ -29,9 +14,9 @@ const isSelected = (props) => {
         return getSelection
     }
     return null
-}
+} 
 
-const Container = styled.div`
+export const SidebarOptionContainer = styled.div`
     display: flex;
     align-items: center;
     height: 40px;
@@ -68,6 +53,3 @@ const Container = styled.div`
 
     ${isSelected}
 `;
-
-
-

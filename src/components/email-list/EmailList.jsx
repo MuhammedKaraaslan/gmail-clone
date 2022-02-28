@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 
-import EmailListSection from './EmailListSection';
+import { dataBase } from '../../firebase/firebase'
 
-import { dataBase } from '../firebase/firebase'
+import {EmailListContainer, EmailListSettings, EmailListSettingsLeft, EmailListSettingsRight, EmailListSections, Emails} from './EmailList.styles'
 
-import styled from 'styled-components';
+import EmailListSection from '../email-list-section/EmailListSection';
+import EmailRow from '../email-row/EmailRow'; 
 
 import { Button, Checkbox } from '@mui/material';
 import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Redo, Settings } from '@mui/icons-material';
-import EmailRow from './EmailRow';
+
+
 
 function EmailList() {
 
@@ -58,44 +60,8 @@ function EmailList() {
                     />
                 ))}
             </Emails>
-
         </EmailListContainer>
     )
 }
 
 export default EmailList
-
-const EmailListContainer = styled.div`
-    flex: 1;
-    overflow: scroll;
-    ::-webkit-scrollbar{
-        display: none;
-    }
-`;
-
-const EmailListSettings = styled.div`
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid whitesmoke;
-    background-color: white;
-`;
-
-const EmailListSettingsLeft = styled.div``;
-
-const EmailListSettingsRight = styled.div``;
-
-const EmailListSections = styled.div`
-    position: sticky;
-    top: 0;
-    display: flex;
-    background-color: white;
-    border-bottom: 1px solid whitesmoke;
-    z-index: 2;
-`;
-
-const Emails = styled.div`
-    padding-bottom: 5%;
-`;
