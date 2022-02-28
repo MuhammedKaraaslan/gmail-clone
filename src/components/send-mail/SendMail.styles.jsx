@@ -47,13 +47,9 @@ export const SendMailButton = styled(Button)`
 
 export const MailForm = styled.form`
     display: flex;
-    flex: 1;
     flex-direction: column;
-
-    .sendMail__message{
-        flex: 1;
-    }
-
+    flex: 1;
+    
     input{
         height: 30px;
         padding: 10px;
@@ -61,6 +57,14 @@ export const MailForm = styled.form`
         border-bottom: 1px solid whitesmoke;
         outline: none;
     }
+    
 `;
 
-export const SendMailOptions = styled.div``;
+
+export const InputMessage = styled.input`
+    flex: 1;
+`;
+
+export const SendMailOptions = styled.div`
+    background-color: white !important;
+`;
