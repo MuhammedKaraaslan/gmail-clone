@@ -6,7 +6,7 @@ import { MailBody, MailBodyHeader, MailContainer, MailImportant, MailMessage, Ma
 
 import { selectOpenMail } from '../../features/mailSlice'
 
-import { ArrowBack, CheckCircle, Delete, Email, Error, ExitToApp, LabelImportant, MoreVert, MoveToInbox, Print, UnfoldMore, WatchLater } from '@mui/icons-material';
+import { AddTask, Archive, ArrowBack, Delete, DriveFileMove, Label, MarkAsUnread, OpenInNew, Print, Report, WatchLater } from '@mui/icons-material';
 import { Button } from '@mui/material';
 
 function MailDetails() {
@@ -21,19 +21,18 @@ function MailDetails() {
       <MailTools>
         <MailToolsLeft>
           <Button onClick={() => navigate('/')} > <ArrowBack /></Button>
-          <Button><MoveToInbox /></Button>
-          <Button><Error /></Button>
+          <Button><Archive /></Button>
+          <Button><Report /></Button>
           <Button><Delete /></Button>
-          <Button><Email /></Button>
+          <Button><MarkAsUnread /></Button>
           <Button><WatchLater /></Button>
-          <Button><CheckCircle /></Button>
-          <Button><LabelImportant /></Button>
-          <Button><MoreVert /></Button>
+          <Button><AddTask /></Button>
+          <Button><DriveFileMove /></Button>
+          <Button><Label /></Button>
         </MailToolsLeft>
         <MailToolsRight>
-          <Button> <UnfoldMore /></Button>
           <Button><Print /></Button>
-          <Button><ExitToApp /></Button>
+          <Button><OpenInNew /></Button>
         </MailToolsRight>
       </MailTools>
       {/* MailTools End */}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Search, ArrowDropDown } from '@mui/icons-material';
+import { Search, Tune } from '@mui/icons-material';
 
 export const Container = styled.div`
     display: flex;
@@ -8,26 +8,35 @@ export const Container = styled.div`
     justify-content: space-between;
     border-bottom: 1px solid whitesmoke;
     padding: 8px;
-    margin: 0 4px;
+
+    Button{
+        padding: 12px;
+        margin: 0 4px;
+    }
 
     img{
         object-fit: contain;
         height: 40px;
         width: 109px;
-        margin-left: 5px;
+        margin-bottom: 4px;
     }
 `;
 
 export const HeaderLeft = styled.div`
+    min-width: 208px;
+    padding-right: 30px;
     display: flex;
     align-items: center;
 `;
 export const HeaderMiddle = styled.div`
     display: flex;
-    flex: 0.7;
+    width: 100%;
+    height: 48px;
+    padding-left: 10px;
+    pading-right: 30px; 
+    flex: .5;
     align-items: center;
     background-color: whitesmoke;
-    padding: 10px;
     border-radius: 5px;
     
     input{
@@ -44,8 +53,9 @@ export const SearchIconContainer = styled(Search)`
     color: grey;
 `;
 
-export const ArrowDropDownIconContainer = styled(ArrowDropDown)`
+export const SearchOptionIconContainer = styled(Tune)`
     color: grey;
+    padding-right: 10px;
 `;
 
 export const HeaderRight = styled.div`

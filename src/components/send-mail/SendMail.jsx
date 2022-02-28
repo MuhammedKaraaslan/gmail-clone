@@ -36,13 +36,12 @@ function SendMail() {
             </SendMailHeader>
 
             <MailForm onSubmit={handleSubmit(onSubmit)}>
-                <input name='to' placeholder={errors.to ? 'To is Required' : 'To'} type="email" {...register("to", { required: true })} />
+                <input name='to' placeholder={errors.to ? 'Recipient is Required' : 'Recipients'} type="email" {...register("to", { required: true })} />
                 <input name='subject' placeholder={errors.subject ? 'Subject is Required' : 'Subject'} type="text" {...register("subject", { required: true })} />
                 <input name='message' placeholder={errors.message ? 'Message is Required' : ''} type="text" className='sendMail__message' {...register("message", { required: true })} />
                 <SendMailOptions>
                     <SendMailButton
                         variant='contained'
-                        color='primary'
                         type='submit'
                     >Send</SendMailButton>
                 </SendMailOptions>

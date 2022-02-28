@@ -6,10 +6,10 @@ import { Button } from '@mui/material';
 export const SendMailContainer = styled.div`
     position: absolute;
     bottom: 0;
-    right: 0;   
-    background-color: #404040;
+    right: 0;
+    margin-right: 40px;   
     width: 40%;
-    height: 40%;
+    height: 60%;
     max-width: 500px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -25,6 +25,7 @@ export const SendMailHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     color: gray;
+    background-color: #404040;
 
     h3{
         color: whitesmoke;
@@ -40,6 +41,7 @@ export const SendMailButton = styled(Button)`
     background-color: #3079ed !important;
     text-transform: capitalize !important;
     margin: 15px !important;
+    color: white !important;
 `;
 
 

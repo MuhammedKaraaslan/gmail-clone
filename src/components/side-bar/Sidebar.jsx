@@ -20,7 +20,7 @@ function Sidebar() {
     <SidebarContainer>
       <ComposeButton
         onClick={() => dispatch(changeSendMessageIsOpen())}
-        startIcon={<Add fontSize='large' />}
+        startIcon={<Add />}
       >Compose</ComposeButton>
 
       <SidebarOption Icon={Inbox} title='Inbox' number={54} selected={false} />

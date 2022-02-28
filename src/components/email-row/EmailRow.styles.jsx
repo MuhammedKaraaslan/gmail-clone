@@ -18,21 +18,30 @@ export const EmailRowContainer = styled.div`
 export const RowOptions = styled.div`
     display: flex;
 
+    Button{
+        padding: 0;
+        margin: 0;
+    }
+
+    Button:not(:last-child){
+        padding-left: 10px;
+    }
 `;
 
 export const RowTitle = styled.div`
-    flex: 0.3;
+    flex: 0.12;
     font-size: 13px;
+    padding-left: 15px;
 `;
 
 export const RowMessage = styled.div`
     display: flex;
-    flex: 0.8;
     align-items: center;
+    flex: 1;
     font-size: 13px;
 
     h4{
-        width: 400px;
+        flex: 0.95;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

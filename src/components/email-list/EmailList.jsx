@@ -8,7 +8,7 @@ import EmailListSection from '../email-list-section/EmailListSection';
 import EmailRow from '../email-row/EmailRow'; 
 
 import { Button, Checkbox } from '@mui/material';
-import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Redo, Settings } from '@mui/icons-material';
+import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Refresh, Settings } from '@mui/icons-material';
 
 
 
@@ -32,7 +32,7 @@ function EmailList() {
                 <EmailListSettingsLeft>
                     <Button> <Checkbox /> </Button>
                     <Button> <ArrowDropDown /> </Button>
-                    <Button> <Redo /> </Button>
+                    <Button> <Refresh /> </Button>
                     <Button> <MoreVert /> </Button>
                 </EmailListSettingsLeft>
 

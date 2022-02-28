@@ -21,6 +21,7 @@ border-bottom-width: 2px;
 padding: 0 15px;
 min-width: 200px;
 cursor: pointer;
+color: grey;
 
 &:hover {
     background-color: whitesmoke;

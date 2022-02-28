@@ -5,14 +5,13 @@ import { LabelImportant } from '@mui/icons-material';
 
 export const MailContainer = styled.div`
   flex: 1;
-  background-color: whitesmoke;
 `;
 
 export const MailTools = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: white;
-
+  border-bottom: 1px solid whitesmoke;
+  padding: 5px 0;
 `;
 
 export const MailToolsLeft = styled.div``;
@@ -22,18 +21,15 @@ export const MailToolsRight = styled.div``;
 export const MailBody = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 30px;
-  background-color: white;
-  padding: 20px;
+  margin: 30px 45px;
   height: 100vh;
-  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
 `;
 
 export const MailBodyHeader = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid whitesmoke;
-  padding: 20px;
+  padding-bottom: 20px;
   position: relative;
 
   h2{

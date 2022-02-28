@@ -25,6 +25,7 @@ export const EmailListSettingsRight = styled.div``;
 export const EmailListSections = styled.div`
     position: sticky;
     top: 0;
+    height: 56px;
     display: flex;
     background-color: white;
     border-bottom: 1px solid whitesmoke;
@@ -33,4 +34,5 @@ export const EmailListSections = styled.div`
 
 export const Emails = styled.div`
     padding-bottom: 5%;
+    background-color: whitesmoke;
 `;

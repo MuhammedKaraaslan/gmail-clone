@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Container, HeaderLeft, HeaderMiddle, SearchIconContainer, ArrowDropDownIconContainer, HeaderRight } from './Header.styles';
+import { Container, HeaderLeft, HeaderMiddle, SearchIconContainer, SearchOptionIconContainer, HeaderRight } from './Header.styles';
 
 import { logout, selectUser } from '../../features/userSlice';
 
@@ -9,7 +9,7 @@ import { auth } from '../../firebase/firebase';
 
 //Source: https://mui.com/getting-started/installation/
 import { Button, Avatar } from '@mui/material';
-import { Menu, Apps, Notifications } from '@mui/icons-material';
+import { Menu, Apps, Settings, HelpOutline } from '@mui/icons-material';
 
 function Header() {
 
@@ -33,15 +33,18 @@ function Header() {
             <HeaderMiddle>
                 <SearchIconContainer />
                 <input placeholder='Search mail' type='text' />
-                <ArrowDropDownIconContainer />
+                <SearchOptionIconContainer />
             </HeaderMiddle>
 
             <HeaderRight>
                 <Button>
-                    <Apps />
+                    <HelpOutline />
                 </Button>
                 <Button>
-                    <Notifications />
+                    <Settings />
+                </Button>
+                <Button>
+                    <Apps />
                 </Button>
                 <Avatar onClick={signOut} src={user?.photoUrl} />
             </HeaderRight>
