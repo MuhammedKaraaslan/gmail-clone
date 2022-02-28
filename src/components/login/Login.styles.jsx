@@ -1,18 +1,27 @@
 import styled from 'styled-components';
 
-export const LoginPage = styled.div`
-    background-color: #f2f2f2;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-`;
-
 export const LoginContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 100vh;
+
+    h1{
+        color: #1976d2;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
 
     img{
         object-fit: contain;
         height: 50px;
+    }
+
+    Button {
+        color: white !important;
+        width: 20%;
+        margin-top: 30px;
     }
 `;

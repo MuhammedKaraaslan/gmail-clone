@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LoginContainer, LoginPage } from './Login.styles';
+import { LoginContainer } from './Login.styles';
 
 import { auth, provider } from '../../firebase/firebase';
 
@@ -25,12 +25,11 @@ function Login() {
     }
 
     return (
-        <LoginPage>
-            <LoginContainer>
-                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="login logo" />
-            </LoginContainer>
+        <LoginContainer>
+            <h1>Welcome to my gmail clone</h1>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="login logo" />
             <Button variant='contained' color='primary' onClick={signIn}>Login</Button>
-        </LoginPage>
+        </LoginContainer>
     )
 }
 
