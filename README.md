@@ -2,8 +2,6 @@
 
 Gmail clone created with ReactJS and Redux.
 
-## [Click Here](https://mhmmd-gmail-clone.herokuapp.com/) to view the site
-
 ## Topics
 - ReactJS
 - Redux
